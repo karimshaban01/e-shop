@@ -1,0 +1,680 @@
+:root {
+  --primary-blue: #2196f3;
+  --secondary-blue: #42a5f5;
+  --light-blue: #e3f2fd;
+  --hover-blue: #1976d2;
+  --text-blue: #1e3a8a;
+  --bg-blue: #f0f7ff;
+  --border-blue: #bbdefb;
+  --shadow-blue: rgba(33, 150, 243, 0.1);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-blue);
+    overflow-x: hidden;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.firstHeader {
+    padding: 15px;
+    width: 100%;
+    color: white;
+    top: 0;
+    background: linear-gradient(135deg, var(--primary-blue), var(--hover-blue));
+    box-shadow: 0 2px 10px rgba(33, 150, 243, 0.15);
+    transition: all 0.3s ease;
+}
+
+.companyTable a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease;
+}
+
+.companyTable a:hover {
+    color: #f8f9fa;
+}
+
+.secondHeader {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(33, 150, 243, 0.08);
+    border-radius: 12px;
+    margin: 15px auto;
+    max-width: 1200px;
+}
+
+.secondHeader input[type=text] {
+    padding: 12px 20px;
+    border: 2px solid var(--border-blue);
+    border-radius: 25px;
+    outline: none;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+.secondHeader input[type=text]:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 4px rgba(33, 150, 243, 0.1);
+}
+
+.secondHeader input[type=submit] {
+    display: none;
+}
+
+.secondHeader img {
+    width: 40px;
+    height: 40px;
+}
+
+.cart-Count span {
+    position: relative;
+    float: right;
+    font-size: 20px;
+    color: grey;
+    margin-right: 20px;
+}
+
+.cart-Count label {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    margin-top: -7px;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.nameCompany {
+    float: left;
+}
+
+.x-table {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.containerDiv {
+    display: inline-block;
+    width: 100%;
+    margin-right: 10%;
+    margin-left: 7%;
+}
+
+.normalLink {
+    width: 15%;
+    float: left;
+    padding: 12px;
+    height: 100%;
+    display: inline-block;
+}
+
+.categoryDiv {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid var(--border-blue);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.categoryDiv:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.menuLinkList {
+    width: 100%;
+    display: inline-block;
+}
+
+.categoryTitle {
+    padding: 15px;
+    background-color: var(--primary-blue);
+    color: white;
+    font-weight: 600;
+}
+
+.categoryDiv a, .menuLinkList a {
+    text-decoration: none;
+    color: black;
+}
+
+.listLink {
+    padding: 10px;
+}
+
+.listLink:hover {
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.categoryList {
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid var(--border-blue);
+}
+
+.categoryList:hover {
+    background-color: var(--light-blue);
+    padding-left: 20px;
+}
+
+.listIcon {
+    float: right;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.categoryList:hover {
+    color: #ea5050;
+}
+
+.divBody {
+    width: 80%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px;
+    display: inline-block;
+    float: right;
+}
+
+.cover {
+    display: inline-block;
+    padding: 5px;
+    width: 20%;
+}
+
+.price {
+    color: #ea5050;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 4px;
+}
+
+.namePd {
+    padding: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.previewProduct {
+    background-color: white;
+    box-shadow: 0 4px 20px var(--shadow-blue);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-blue);
+    overflow: hidden;
+}
+
+.previewProduct img {
+    width: 100%;
+    height: 190px;
+}
+
+.previewProduct:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px var(--shadow-blue);
+}
+
+.addCart {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    padding: 12px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    font-weight: 500;
+}
+
+.addCart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-blue);
+}
+
+.footerDivLink {
+    background: white;
+    padding: 16px;
+    box-shadow: 0 -4px 20px var(--shadow-blue);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    font-size: 18px;
+    color: grey;
+    display: none;
+}
+
+.optionLink {
+    display: none;
+}
+
+.cover a {
+    text-decoration: none;
+    color: grey;
+}
+
+.previewProductDetails, .cartListDiv, .ordersDiv {
+    width: 85%;
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+    display: inline-block;
+    border-top: 2px solid #ea5050;
+}
+
+.imgDivDisplay {
+    display: inline-block;
+    padding: 6px;
+    width: 45%;
+    float: left;
+}
+
+.imgDivDisplay img {
+    width: 100%;
+}
+
+.resultProductDisplayDetails {
+    display: inline-block;
+    padding: 6px;
+    float: right;
+    width: 50%;
+}
+
+.catNameDis {
+    font-size: 20px;
+    color: grey;
+    padding: 6px;
+}
+
+.prodNamedis {
+    font-size: 30px;
+}
+
+.moneyDis {
+    color: #ea5050;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.quntDis {
+    padding: 12px;
+}
+
+.Myform input[type=number] {
+    padding: 12px;
+    border-radius: 4px;
+    border: 2px solid grey;
+    outline-color: royalblue;
+}
+
+.btnAddCart {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btnAddCart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-blue);
+}
+
+.preDivDesc {
+    white-space: pre-line;
+    float: left;
+}
+
+.related {
+    background-color: white;
+    width: 85%;
+    padding: 12px;
+}
+
+.related strong {
+    font-size: 20px;
+    color: grey;
+}
+
+.logoutBtn {
+    padding: 7px;
+    background-color: darkred;
+    color: white;
+    border-radius: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imgProfile {
+    padding: 6px;
+    margin-top: -100px;
+}
+
+.imgProfile img {
+    width: 200px;
+    height: 195px;
+    border: 5px solid #ea5050;
+    border-radius: 50%;
+}
+
+.editProfile {
+    padding: 12px;
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.editProfile:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.deleteProfile {
+    padding: 12px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.deleteProfile:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.viewOrders {
+    padding: 12px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.viewOrders:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editPass {
+    padding: 12px;
+    background-color: seagreen;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.editPass:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profileDiv {
+    width: 55%;
+    background-color: white;
+    margin-top: 90px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    border-radius: 0px 4px 0px 4px;
+    padding: 12px;
+}
+
+.personalDetails {
+    padding: 10px;
+    background-color: ghostwhite;
+    border-radius: 4px;
+}
+
+.spc {
+    display: none;
+}
+
+.editUserDetails input[type=text], .editUserDetails input[type=number], .editUserDetails input[type=password], .editUserDetails input[type=file] {
+    padding: 12px;
+    width: 90%;
+    border: 0px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+.editUserDetails label {
+    color: gray;
+    cursor: pointer;
+    float: left;
+}
+
+.editUserDetails input[type=submit] {
+    background-color: royalblue;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    width: 95%;
+    border-radius: 4px;
+    outline: none;
+    border: 0px;
+}
+
+.addType {
+    padding: 10px;
+    width: 35%;
+    float: left;
+    border-top: 2px solid #ea5050;
+    background-color: white;
+}
+
+.notificationDiv {
+    padding: 10px;
+    color: white;
+}
+
+.label-not {
+	background: #e74c3c;
+	color: white;
+	padding: 2px 6px;
+	border-radius: 50%;
+	font-size: 0.8em;
+	float: right;
+}
+
+.labelnot {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background: #e74c3c;
+	border-radius: 50%;
+	margin-left: 5px;
+}
+
+.buttonList {
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 50%;
+	transition: background 0.3s;
+	font-size: 25px;
+}
+
+.buttonList:hover {
+	background: var(--secondary-color);
+}
+
+@media(max-width:800px) {
+	.companyTable {
+		display: none;
+	}
+
+	.nameCompany {
+		float: none;
+	}
+
+	.secondHeader input[type=text] {
+		width: 100%;
+		outline-color: royalblue;
+		border-radius: 4px;
+	}
+
+	.x-table {
+		width: 95%;
+	}
+
+	.cart-Count span {
+		margin-right: 20px;
+	}
+
+	.normalLink {
+		display: none;
+	}
+
+	.containerDiv {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.divBody {
+		float: none;
+		width: 95%;
+	}
+
+	.cover {
+		width: 46%;
+		padding: 3px;
+	}
+
+	.addCart {
+		display: none;
+	}
+
+	.previewProduct img {
+		width: 100%;
+		height: 110px;
+	}
+
+	.previewProduct:hover {
+		transform: none;
+	}
+
+	.footerDivLink {
+		display: block;
+	}
+
+	.linkFooter a {
+		text-decoration: none;
+		color: grey;
+		font-size: 25px;
+	}
+
+	.button {
+		font-size: 25px;
+	}
+
+	.buttonList {
+		font-size: 25px;
+	}
+
+	.optionLink {
+		height: 100vh;
+		background-color: white;
+		box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+		width: 0px;
+		overflow: auto;
+		transition: 0.3s;
+		position: fixed;
+		display: block;
+	}
+
+	.register-login-Link {
+		padding: 12px;
+		background-color: #ea5050;
+		color: white;
+	}
+
+	.register-login-Link a {
+		text-decoration: none;
+		color: white;
+		font-size: 17px;
+		padding: 12px;
+	}
+
+	.name-In-link {
+		padding: 12px;
+		font-size: 20px;
+	}
+
+	.cate-ty-link {
+		padding: 12px;
+		background-color: whitesmoke;
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	.linkCatelist a {
+		text-decoration: none;
+		color: grey;
+	}
+
+	.previewProductDetails {
+		width: 90%;
+	}
+
+	.imgDivDisplay {
+		width: 95%;
+		float: none;
+	}
+
+	.resultProductDisplayDetails {
+		width: 95%;
+		float: none;
+	}
+
+	.Myform input[type=number] {
+		width: 90%;
+	}
+
+	.btnAddCart {
+		width: 99%;
+	}
+
+	.btnAddCart:hover {
+		transform: none;
+	}
+
+	.related {
+		width: 90%;
+	}
+
+	.profileDiv {
+		width: 90%;
+	}
+
+	.addType {
+		width: 90%;
+	}
+
+	.spc {
+		display: block;
+	}
+
+	.ordersDiv {
+		width: 90%;
+	}
+
+	.notificationDiv {
+		width: 93%;
+	}
+}

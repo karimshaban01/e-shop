@@ -1,0 +1,585 @@
+:root {
+    --primary-blue: #2196f3;
+    --secondary-blue: #42a5f5;
+    --light-blue: #e3f2fd;
+    --hover-blue: #1976d2;
+    --surface-blue: #f5f9ff;
+    --border-blue: #bbdefb;
+    --text-blue: #1e3a8a;
+    --shadow-blue: rgba(33, 150, 243, 0.15);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--surface-blue);
+    overflow-x: hidden;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.header {
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    box-shadow: 0 2px 15px var(--shadow-blue);
+    z-index: 2;
+    color: white;
+}
+
+.header input {
+    padding: 12px 20px;
+    width: 40%;
+    border: none;
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.header input:focus {
+    box-shadow: 0 0 0 4px var(--shadow-blue);
+}
+
+.td-Profile {
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.td-Profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.container-body {
+    width: 100%;
+    display: inline-block;
+}
+
+.link {
+    padding: 16px;
+    width: 15%;
+    position: fixed;
+    display: inline-block;
+    height: 100vh;
+    background-color: white;
+    float: left;
+    box-shadow: 0 2px 20px var(--shadow-blue);
+}
+
+.result-Container {
+    display: inline-block;
+    width: 80%;
+    padding: 12px;
+    float: right;
+    margin-top: 50px;
+}
+
+.link ul {
+    list-style: none;
+}
+
+.link a {
+    text-decoration: none;
+    color: black;
+}
+
+.link li {
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.link li:hover {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    transform: translateX(5px);
+    color: white;
+}
+
+.link a:hover {
+    color: white;
+}
+
+.usersDiv, .productsDiv, .editProfilediv, .viewUserProfile, .ordersDiv, 
+.productDetailsView, .searhDivResult, .homedivTo {
+    width: 95%;
+    padding: 16px;
+    background-color: white;
+    border-radius: 12px;
+    border-top: 3px solid var(--primary-blue);
+    box-shadow: 0 4px 20px var(--shadow-blue);
+    transition: all 0.3s ease;
+}
+
+.productsDiv strong {
+    display: inline-block;
+}
+
+.addpdbtn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    display: inline-block;
+    border-radius: 8px;
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.addpdbtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-blue);
+}
+
+.addProduct label {
+    color: gray;
+}
+
+.addProduct input, .registerAdmin input, .addProduct textarea, .addProduct select {
+    width: 90%;
+    border: 2px solid var(--border-blue);
+    outline: none;
+    padding: 14px;
+    background-color: var(--surface-blue);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.addProduct textarea {
+    height: 90px;
+}
+
+.addProduct input:focus, .registerAdmin input:focus, 
+.addProduct textarea:focus, .addProduct select:focus {
+    background-color: white;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 4px var(--shadow-blue);
+}
+
+.tdAdd {
+    width: 50%;
+}
+
+.addProduct input[type=submit], .registerAdmin input[type=submit] {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.addProduct input[type=submit]:hover, .registerAdmin input[type=submit]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-blue);
+}
+
+.addProduct td {
+    padding: 12px;
+}
+
+.settingDiv {
+    padding: 12px;
+    width: 95%;
+    display: inline-block;
+}
+
+.div1 {
+    display: inline-block;
+    width: 70%;
+    padding: 12px;
+    float: left;
+    box-shadow: 0 0 20px var(--shadow-blue);
+}
+
+.div2 {
+    display: inline-block;
+    padding: 12px;
+    width: 20%;
+    margin-right: 10px;
+    float: right;
+}
+
+.maintanance {
+    padding: 12px;
+    border-radius: 4px;
+    width: 95%;
+    background-color: white;
+    box-shadow: 0 0 16px var(--shadow-blue);
+}
+
+.maintanance a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.switchoff {
+    padding: 9px;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.switchon {
+    padding: 9px;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.addType {
+    padding: 10px;
+    width: 50%;
+    float: left;
+    border-top: 2px solid var(--primary-blue);
+    background-color: white;
+}
+
+.listType {
+    padding: 10px;
+    width: 35%;
+    float: right;
+    background-color: white;
+}
+
+.listType input[type=text] {
+    padding: 10px;
+    width: 90%;
+    border: 0px;
+    outline: none;
+    background-color: whitesmoke;
+}
+
+.listType input[type=submit] {
+    padding: 10px;
+    width: 95%;
+    border: 0px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    cursor: pointer;
+}
+
+.profileDiv {
+    width: 55%;
+    background-color: white;
+    margin-top: 90px;
+    box-shadow: 0 0 16px var(--shadow-blue);
+    border-radius: 0px 4px 0px 4px;
+    padding: 12px;
+}
+
+.imgProfile {
+    padding: 6px;
+    margin-top: -100px;
+}
+
+.imgProfile img {
+    width: 200px;
+    height: 195px;
+    border: 5px solid var(--primary-blue);
+    border-radius: 50%;
+}
+
+.personalDetails {
+    padding: 10px;
+    background-color: ghostwhite;
+    border-radius: 4px;
+}
+
+.editProfile {
+    padding: 12px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.editProfile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-blue);
+}
+
+.deleteProfile {
+    padding: 12px;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.deleteProfile:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+}
+
+.editPass {
+    padding: 12px;
+    background-color: seagreen;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.btnProfile a {
+    text-decoration: none;
+}
+
+.editUserDetails input[type=text], .editUserDetails input[type=number], 
+.editUserDetails input[type=password], .editUserDetails input[type=file], 
+.editUserDetails textarea {
+    padding: 12px;
+    width: 90%;
+    border: 0px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    outline: none;
+}
+
+.editUserDetails label {
+    color: gray;
+    cursor: pointer;
+    float: left;
+}
+
+.editUserDetails input[type=submit] {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    width: 95%;
+    border-radius: 4px;
+    outline: none;
+    border: 0px;
+}
+
+.imgProfileDetail {
+    display: inline-block;
+    width: 95%;
+    padding: 12px;
+}
+
+.imgProfileDetail img {
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+}
+
+.imgProductDetails {
+    padding: 4px;
+    border-radius: 4px;
+    max-width: 300px;
+    max-height: 350px;
+    box-shadow: 0 0 16px var(--shadow-blue);
+}
+
+.imgProductDetails img {
+    border-radius: 4px;
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.descpro {
+    background-color: teal;
+    color: white;
+    border-radius: 4px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.previewDesc {
+    position: absolute;
+    padding: 0px;
+    box-shadow: 0 0 16px var(--shadow-blue);
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.4s;
+    height: 0px;
+    z-index: 4;
+    margin-right: 10%;
+    top: 0px;
+}
+
+.tblOrder img {
+    width: 100px;
+    height: 100px;
+}
+
+.tblOrder a {
+    text-decoration: none;
+}
+
+.trackOrder {
+    padding: 12px;
+    background-color: seagreen;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.acceptOrder {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.declineOrder {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tblUser a {
+    text-decoration: none;
+}
+
+.tblUser img {
+    border-radius: 4px;
+    width: 130px;
+    height: 130px;
+}
+
+.viewUserProfiles {
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.viewProductDt {
+    padding: 10px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.viewProductDt:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-blue);
+}
+
+.deliverP {
+    padding: 10px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.deliverP:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-blue);
+}
+
+.completeBtn {
+    padding: 10px;
+    background-color: lawngreen;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+#Not-Read {
+    padding: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    box-shadow: 0 4px 12px var(--shadow-blue);
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#read {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid var(--border-blue);
+    box-shadow: 0 4px 12px var(--shadow-blue);
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.notification label {
+    float: right;
+    background-color: red;
+    border-radius: 50%;
+    padding: 2px;
+    color: white;
+    width: 12px;
+    font-size: 10px;
+    height: 12px;
+}
+
+.matheDetail, .mainDashboardDiv {
+    display: inline-block;
+    width: 100%;
+}
+
+.cover {
+    padding: 4px;
+    width: 32%;
+    display: inline-block;
+}
+
+.dataLink {
+    display: inline-block;
+    padding: 16px;
+    box-shadow: 0 4px 20px var(--shadow-blue);
+    background-color: white;
+    border-radius: 12px;
+    width: 95%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid var(--border-blue);
+}
+
+.dataLink:hover {
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    transform: translateY(-3px);
+    color: white;
+    box-shadow: 0 6px 25px var(--shadow-blue);
+}
+
+#hideshow {
+    display: none;
+}
+
+.btnShow {
+    padding: 6px;
+    border-radius: 4px;
+    background-color: var(--primary-blue);
+    color: white;
+    cursor: pointer;
+}

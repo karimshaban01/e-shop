@@ -1,0 +1,149 @@
+:root {
+    --primary-blue: #2196f3;
+    --secondary-blue: #42a5f5;
+    --light-blue: #e3f2fd;
+    --hover-blue: #1976d2;
+    --surface-blue: #f5f9ff;
+    --border-blue: #bbdefb;
+    --text-blue: #1e3a8a;
+    --shadow-blue: rgba(33, 150, 243, 0.15);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, var(--light-blue), var(--surface-blue));
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.form-container {
+    padding: 32px;
+    width: 30%;
+    background-color: white;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 30px var(--shadow-blue);
+    margin-top: 150px;
+    border-radius: 16px;
+    border: 1px solid var(--border-blue);
+}
+
+.form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px var(--shadow-blue);
+}
+
+.form-container img {
+    width: 100px;
+    height: 100px;
+    margin-top: -80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px var(--shadow-blue);
+    border: 4px solid white;
+    transition: transform 0.3s ease;
+}
+
+.form-container img:hover {
+    transform: scale(1.05);
+}
+
+.form-container input[type=text],
+input[type=password],
+input[type=number],
+input[type=file] {
+    padding: 14px 18px;
+    background-color: var(--surface-blue);
+    border: 2px solid var(--border-blue);
+    border-radius: 12px;
+    outline: none;
+    width: 90%;
+    transition: all 0.3s ease;
+    margin-bottom: 16px;
+    font-size: 15px;
+}
+
+.form-container input[type=text]:focus,
+input[type=password]:focus,
+input[type=number]:focus {
+    background-color: white;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 4px var(--shadow-blue);
+}
+
+.form-container input[type=submit] {
+    padding: 14px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    width: 95%;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-container input[type=submit]:hover {
+    background: linear-gradient(135deg, var(--secondary-blue), var(--hover-blue));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px var(--shadow-blue);
+}
+
+.form-container a {
+    text-decoration: none;
+    color: var(--text-blue);
+    transition: color 0.3s ease;
+}
+
+.form-container a:hover {
+    color: var(--primary-blue);
+}
+
+.error-message {
+    margin-right: 20px;
+    margin-left: 80%;
+    padding: 14px 18px;
+    top: 20px;
+    border-left: 4px solid var(--primary-blue);
+    color: var(--text-blue);
+    width: 200px;
+    transition: 0.3s;
+    position: absolute;
+    background-color: white;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 20px var(--shadow-blue);
+}
+
+.skip {
+    padding: 14px;
+    width: 90%;
+    cursor: pointer;
+    background-color: var(--light-blue);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    color: var(--text-blue);
+    border: 1px solid var(--border-blue);
+}
+
+.skip:hover {
+    background-color: var(--surface-blue);
+    transform: translateY(-1px);
+}
+
+@media (max-width:600px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .error-message {
+        width: 95%;
+        margin-left: 0px;
+        top: 0;
+        text-align: center;
+        border-radius: 0 0 12px 12px;
+        border-left: none;
+        border-top: 4px solid var(--primary-blue);
+    }
+}
